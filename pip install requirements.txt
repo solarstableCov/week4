@@ -1,0 +1,815 @@
+resume@ubuntu:~$ cd week4/
+venv/          WAD_note_demo/ 
+resume@ubuntu:~$ cd week4/WAD_note_demo/
+resume@ubuntu:~/week4/WAD_note_demo$ python3 -m venv venv
+resume@ubuntu:~/week4/WAD_note_demo$ . ./venv/bin/activate
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip install -r requirements.txt
+Collecting mysqlclient
+  Using cached mysqlclient-2.1.1.tar.gz (88 kB)
+Collecting ipython
+  Using cached ipython-8.6.0-py3-none-any.whl (761 kB)
+Collecting sqlalchemy
+  Using cached SQLAlchemy-1.4.44-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+Collecting pdoc3
+  Using cached pdoc3-0.10.0-py3-none-any.whl (135 kB)
+Collecting mariadb==1.0.11
+  Using cached mariadb-1.0.11.zip (85 kB)
+Collecting prompt-toolkit<3.1.0,>3.0.1
+  Using cached prompt_toolkit-3.0.33-py3-none-any.whl (383 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting pexpect>4.3; sys_platform != "win32"
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting jedi>=0.16
+  Using cached jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+Collecting traitlets>=5
+  Using cached traitlets-5.5.0-py3-none-any.whl (107 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting stack-data
+  Using cached stack_data-0.6.1-py3-none-any.whl (24 kB)
+Collecting matplotlib-inline
+  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting pygments>=2.4.0
+  Using cached Pygments-2.13.0-py3-none-any.whl (1.1 MB)
+Collecting greenlet!=0.4.17; python_version >= "3" and (platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32"))))))
+  Using cached greenlet-2.0.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (544 kB)
+Collecting markdown>=3.0
+  Using cached Markdown-3.4.1-py3-none-any.whl (93 kB)
+Collecting mako
+  Using cached Mako-1.2.4-py3-none-any.whl (78 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting executing>=1.2.0
+  Using cached executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Collecting asttokens>=2.1.0
+  Using cached asttokens-2.1.0-py2.py3-none-any.whl (26 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting importlib-metadata>=4.4; python_version < "3.10"
+  Using cached importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+Collecting MarkupSafe>=0.9.2
+  Using cached MarkupSafe-2.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting six
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.10.0-py3-none-any.whl (6.2 kB)
+Building wheels for collected packages: mysqlclient, mariadb
+  Building wheel for mysqlclient (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-ea8hrf4h
+       cwd: /tmp/pip-install-v78wfio2/mysqlclient/
+  Complete output (22 lines):
+  mysql_config --version
+  /bin/sh: 1: mysql_config: not found
+  mariadb_config --version
+  ['10.3.34']
+  mariadb_config --libs
+  ['-L/usr/lib/x86_64-linux-gnu/', '-lmariadb']
+  mariadb_config --cflags
+  ['-I/usr/include/mariadb', '-I/usr/include/mariadb/mysql']
+  ext_options:
+    library_dirs: ['/usr/lib/x86_64-linux-gnu/']
+    libraries: ['mariadb']
+    extra_compile_args: ['-std=c99']
+    extra_link_args: []
+    include_dirs: ['/usr/include/mariadb', '/usr/include/mariadb/mysql']
+    extra_objects: []
+    define_macros: [('version_info', "(2,1,1,'final',0)"), ('__version__', '2.1.1')]
+  usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: setup.py --help [cmd1 cmd2 ...]
+     or: setup.py --help-commands
+     or: setup.py cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  ----------------------------------------
+  ERROR: Failed building wheel for mysqlclient
+  Running setup.py clean for mysqlclient
+  Building wheel for mariadb (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v78wfio2/mariadb/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v78wfio2/mariadb/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-shetz3qy
+       cwd: /tmp/pip-install-v78wfio2/mariadb/
+  Complete output (6 lines):
+  usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: setup.py --help [cmd1 cmd2 ...]
+     or: setup.py --help-commands
+     or: setup.py cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  ----------------------------------------
+  ERROR: Failed building wheel for mariadb
+  Running setup.py clean for mariadb
+Failed to build mysqlclient mariadb
+Installing collected packages: mysqlclient, wcwidth, prompt-toolkit, backcall, decorator, ptyprocess, pexpect, parso, jedi, traitlets, pickleshare, executing, six, asttokens, pure-eval, stack-data, matplotlib-inline, pygments, ipython, greenlet, sqlalchemy, zipp, importlib-metadata, markdown, MarkupSafe, mako, pdoc3, mariadb
+    Running setup.py install for mysqlclient ... error
+    ERROR: Command errored out with exit status 1:
+     command: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-w4edk2ns/install-record.txt --single-version-externally-managed --compile --install-headers /home/resume/week4/WAD_note_demo/venv/include/site/python3.8/mysqlclient
+         cwd: /tmp/pip-install-v78wfio2/mysqlclient/
+    Complete output (43 lines):
+    mysql_config --version
+    /bin/sh: 1: mysql_config: not found
+    mariadb_config --version
+    ['10.3.34']
+    mariadb_config --libs
+    ['-L/usr/lib/x86_64-linux-gnu/', '-lmariadb']
+    mariadb_config --cflags
+    ['-I/usr/include/mariadb', '-I/usr/include/mariadb/mysql']
+    ext_options:
+      library_dirs: ['/usr/lib/x86_64-linux-gnu/']
+      libraries: ['mariadb']
+      extra_compile_args: ['-std=c99']
+      extra_link_args: []
+      include_dirs: ['/usr/include/mariadb', '/usr/include/mariadb/mysql']
+      extra_objects: []
+      define_macros: [('version_info', "(2,1,1,'final',0)"), ('__version__', '2.1.1')]
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-3.8
+    creating build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/__init__.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/_exceptions.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/connections.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/converters.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/cursors.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/release.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    copying MySQLdb/times.py -> build/lib.linux-x86_64-3.8/MySQLdb
+    creating build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/__init__.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/CLIENT.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/CR.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/ER.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/FIELD_TYPE.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    copying MySQLdb/constants/FLAG.py -> build/lib.linux-x86_64-3.8/MySQLdb/constants
+    running build_ext
+    building 'MySQLdb._mysql' extension
+    creating build/temp.linux-x86_64-3.8
+    creating build/temp.linux-x86_64-3.8/MySQLdb
+    x86_64-linux-gnu-gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O2 -Wall -g -fstack-protector-strong -Wformat -Werror=format-security -g -fwrapv -O2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -Dversion_info=(2,1,1,'final',0) -D__version__=2.1.1 -I/usr/include/mariadb -I/usr/include/mariadb/mysql -I/home/resume/week4/WAD_note_demo/venv/include -I/usr/include/python3.8 -c MySQLdb/_mysql.c -o build/temp.linux-x86_64-3.8/MySQLdb/_mysql.o -std=c99
+    unable to execute 'x86_64-linux-gnu-gcc': No such file or directory
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"'; __file__='"'"'/tmp/pip-install-v78wfio2/mysqlclient/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-w4edk2ns/install-record.txt --single-version-externally-managed --compile --install-headers /home/resume/week4/WAD_note_demo/venv/include/site/python3.8/mysqlclient Check the logs for full command output.
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip3 install sqlalchemy
+Collecting sqlalchemy
+  Using cached SQLAlchemy-1.4.44-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+Collecting greenlet!=0.4.17; python_version >= "3" and (platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32"))))))
+  Using cached greenlet-2.0.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (544 kB)
+Installing collected packages: greenlet, sqlalchemy
+Successfully installed greenlet-2.0.1 sqlalchemy-1.4.44
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install python3-pip
+[sudo] password for resume: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libevent-core-2.1-7 libevent-pthreads-2.1-7 libmecab2 libssl-dev mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev fakeroot g++
+  g++-9 gcc gcc-9 libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan5 libatomic1 libbinutils libctf-nobfd0 libctf0 libexpat1 libexpat1-dev libfakeroot
+  libgcc-9-dev libitm1 liblsan0 libpython3-dev libpython3.8-dev libquadmath0 libstdc++-9-dev
+  libtsan0 libubsan1 make python3-dev python3-setuptools python3-wheel python3.8-dev
+Suggested packages:
+  binutils-doc debian-keyring g++-multilib g++-9-multilib gcc-9-doc gcc-multilib autoconf
+  automake libtool flex bison gcc-doc gcc-9-multilib gcc-9-locales libstdc++-9-doc make-doc
+  python-setuptools-doc
+The following NEW packages will be installed
+  binutils binutils-common binutils-x86-64-linux-gnu build-essential dpkg-dev fakeroot g++
+  g++-9 gcc gcc-9 libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+  libasan5 libatomic1 libbinutils libctf-nobfd0 libctf0 libexpat1-dev libfakeroot libgcc-9-dev
+  libitm1 liblsan0 libpython3-dev libpython3.8-dev libquadmath0 libstdc++-9-dev libtsan0
+  libubsan1 make python3-dev python3-pip python3-setuptools python3-wheel python3.8-dev
+The following packages will be upgraded:
+  libexpat1
+1 to upgrade, 35 to newly install, 0 to remove and 121 not to upgrade.
+Need to get 36.0 MB of archives.
+After this operation, 164 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1 amd64 2.2.9-1ubuntu0.5 [74.7 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-common amd64 2.34-6ubuntu1.3 [207 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libbinutils amd64 2.34-6ubuntu1.3 [474 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf-nobfd0 amd64 2.34-6ubuntu1.3 [47.4 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libctf0 amd64 2.34-6ubuntu1.3 [46.6 kB]
+Get:6 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.34-6ubuntu1.3 [1,613 kB]
+Get:7 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 binutils amd64 2.34-6ubuntu1.3 [3,380 B]
+Get:8 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libitm1 amd64 10.3.0-1ubuntu1~20.04 [26.2 kB]
+Get:9 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libatomic1 amd64 10.3.0-1ubuntu1~20.04 [9,284 B]
+Get:10 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libasan5 amd64 9.4.0-1ubuntu1~20.04.1 [2,751 kB]
+Get:11 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 liblsan0 amd64 10.3.0-1ubuntu1~20.04 [835 kB]
+Get:12 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libtsan0 amd64 10.3.0-1ubuntu1~20.04 [2,009 kB]
+Get:13 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libubsan1 amd64 10.3.0-1ubuntu1~20.04 [784 kB]
+Get:14 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libquadmath0 amd64 10.3.0-1ubuntu1~20.04 [146 kB]
+Get:15 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libgcc-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [2,359 kB]
+Get:16 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 gcc-9 amd64 9.4.0-1ubuntu1~20.04.1 [8,274 kB]
+Get:17 http://us.archive.ubuntu.com/ubuntu focal/main amd64 gcc amd64 4:9.3.0-1ubuntu2 [5,208 B]
+Get:18 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libstdc++-9-dev amd64 9.4.0-1ubuntu1~20.04.1 [1,722 kB]
+Get:19 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 g++-9 amd64 9.4.0-1ubuntu1~20.04.1 [8,420 kB]
+Get:20 http://us.archive.ubuntu.com/ubuntu focal/main amd64 g++ amd64 4:9.3.0-1ubuntu2 [1,604 B]
+Get:21 http://us.archive.ubuntu.com/ubuntu focal/main amd64 make amd64 4.2.1-1.2 [162 kB]      
+Get:22 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 dpkg-dev all 1.19.7ubuntu3.2 [679 kB]
+Get:23 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 build-essential amd64 12.8ubuntu1.1 [4,664 B]
+Get:24 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB] 
+Get:25 http://us.archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]    
+Get:26 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-perl all 1.19.03-2 [46.6 kB]
+Get:27 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-diff-xs-perl amd64 0.04-6 [11.3 kB]
+Get:28 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libalgorithm-merge-perl all 0.08-3 [12.0 kB]
+Get:29 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libexpat1-dev amd64 2.2.9-1ubuntu0.5 [117 kB]
+Get:30 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libpython3.8-dev amd64 3.8.10-0ubuntu1~20.04.5 [3,951 kB]
+Get:31 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libpython3-dev amd64 3.8.2-0ubuntu2 [7,236 B]
+Get:32 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 python3.8-dev amd64 3.8.10-0ubuntu1~20.04.5 [514 kB]
+Get:33 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-dev amd64 3.8.2-0ubuntu2 [1,212 B]
+Get:34 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-setuptools all 45.2.0-1 [330 kB]
+Get:35 http://us.archive.ubuntu.com/ubuntu focal/universe amd64 python3-wheel all 0.34.2-1 [23.8 kB]
+Get:36 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 python3-pip all 20.0.2-5ubuntu1.6 [231 kB]
+Fetched 36.0 MB in 47s (764 kB/s)                                                              
+Extract templates from packages: 100%
+(Reading database ... 163693 files and directories currently installed.)
+Preparing to unpack .../00-libexpat1_2.2.9-1ubuntu0.5_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.9-1ubuntu0.5) over (2.2.9-1ubuntu0.4) ...
+Selecting previously unselected package binutils-common:amd64.
+Preparing to unpack .../01-binutils-common_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils-common:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libbinutils:amd64.
+Preparing to unpack .../02-libbinutils_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libbinutils:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libctf-nobfd0:amd64.
+Preparing to unpack .../03-libctf-nobfd0_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libctf-nobfd0:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libctf0:amd64.
+Preparing to unpack .../04-libctf0_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking libctf0:amd64 (2.34-6ubuntu1.3) ...
+Selecting previously unselected package binutils-x86-64-linux-gnu.
+Preparing to unpack .../05-binutils-x86-64-linux-gnu_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils-x86-64-linux-gnu (2.34-6ubuntu1.3) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../06-binutils_2.34-6ubuntu1.3_amd64.deb ...
+Unpacking binutils (2.34-6ubuntu1.3) ...
+Selecting previously unselected package libitm1:amd64.
+Preparing to unpack .../07-libitm1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libitm1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libatomic1:amd64.
+Preparing to unpack .../08-libatomic1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libatomic1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libasan5:amd64.
+Preparing to unpack .../09-libasan5_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
+Unpacking libasan5:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Selecting previously unselected package liblsan0:amd64.
+Preparing to unpack .../10-liblsan0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking liblsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libtsan0:amd64.
+Preparing to unpack .../11-libtsan0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libtsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libubsan1:amd64.
+Preparing to unpack .../12-libubsan1_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libubsan1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libquadmath0:amd64.
+Preparing to unpack .../13-libquadmath0_10.3.0-1ubuntu1~20.04_amd64.deb ...
+Unpacking libquadmath0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Selecting previously unselected package libgcc-9-dev:amd64.
+Preparing to unpack .../14-libgcc-9-dev_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
+Unpacking libgcc-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Selecting previously unselected package gcc-9.
+Preparing to unpack .../15-gcc-9_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
+Unpacking gcc-9 (9.4.0-1ubuntu1~20.04.1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../16-gcc_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking gcc (4:9.3.0-1ubuntu2) ...
+Selecting previously unselected package libstdc++-9-dev:amd64.
+Preparing to unpack .../17-libstdc++-9-dev_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
+Unpacking libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Selecting previously unselected package g++-9.
+Preparing to unpack .../18-g++-9_9.4.0-1ubuntu1~20.04.1_amd64.deb ...
+Unpacking g++-9 (9.4.0-1ubuntu1~20.04.1) ...
+Selecting previously unselected package g++.
+Preparing to unpack .../19-g++_4%3a9.3.0-1ubuntu2_amd64.deb ...
+Unpacking g++ (4:9.3.0-1ubuntu2) ...
+Selecting previously unselected package make.
+Preparing to unpack .../20-make_4.2.1-1.2_amd64.deb ...
+Unpacking make (4.2.1-1.2) ...
+Selecting previously unselected package dpkg-dev.
+Preparing to unpack .../21-dpkg-dev_1.19.7ubuntu3.2_all.deb ...
+Unpacking dpkg-dev (1.19.7ubuntu3.2) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../22-build-essential_12.8ubuntu1.1_amd64.deb ...
+Unpacking build-essential (12.8ubuntu1.1) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../23-libfakeroot_1.24-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.24-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../24-fakeroot_1.24-1_amd64.deb ...
+Unpacking fakeroot (1.24-1) ...
+Selecting previously unselected package libalgorithm-diff-perl.
+Preparing to unpack .../25-libalgorithm-diff-perl_1.19.03-2_all.deb ...
+Unpacking libalgorithm-diff-perl (1.19.03-2) ...
+Selecting previously unselected package libalgorithm-diff-xs-perl.
+Preparing to unpack .../26-libalgorithm-diff-xs-perl_0.04-6_amd64.deb ...
+Unpacking libalgorithm-diff-xs-perl (0.04-6) ...
+Selecting previously unselected package libalgorithm-merge-perl.
+Preparing to unpack .../27-libalgorithm-merge-perl_0.08-3_all.deb ...
+Unpacking libalgorithm-merge-perl (0.08-3) ...
+Selecting previously unselected package libexpat1-dev:amd64.
+Preparing to unpack .../28-libexpat1-dev_2.2.9-1ubuntu0.5_amd64.deb ...
+Unpacking libexpat1-dev:amd64 (2.2.9-1ubuntu0.5) ...
+Selecting previously unselected package libpython3.8-dev:amd64.
+Preparing to unpack .../29-libpython3.8-dev_3.8.10-0ubuntu1~20.04.5_amd64.deb ...
+Unpacking libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.5) ...
+Selecting previously unselected package libpython3-dev:amd64.
+Preparing to unpack .../30-libpython3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Selecting previously unselected package python3.8-dev.
+Preparing to unpack .../31-python3.8-dev_3.8.10-0ubuntu1~20.04.5_amd64.deb ...
+Unpacking python3.8-dev (3.8.10-0ubuntu1~20.04.5) ...
+Selecting previously unselected package python3-dev.
+Preparing to unpack .../32-python3-dev_3.8.2-0ubuntu2_amd64.deb ...
+Unpacking python3-dev (3.8.2-0ubuntu2) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../33-python3-setuptools_45.2.0-1_all.deb ...
+Unpacking python3-setuptools (45.2.0-1) ...
+Selecting previously unselected package python3-wheel.
+Preparing to unpack .../34-python3-wheel_0.34.2-1_all.deb ...
+Unpacking python3-wheel (0.34.2-1) ...
+Selecting previously unselected package python3-pip.
+Preparing to unpack .../35-python3-pip_20.0.2-5ubuntu1.6_all.deb ...
+Unpacking python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up libexpat1:amd64 (2.2.9-1ubuntu0.5) ...
+Setting up python3-setuptools (45.2.0-1) ...
+Setting up libalgorithm-diff-perl (1.19.03-2) ...
+Setting up binutils-common:amd64 (2.34-6ubuntu1.3) ...
+Setting up libctf-nobfd0:amd64 (2.34-6ubuntu1.3) ...
+Setting up python3-wheel (0.34.2-1) ...
+Setting up libfakeroot:amd64 (1.24-1) ...
+Setting up fakeroot (1.24-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up libasan5:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Setting up libexpat1-dev:amd64 (2.2.9-1ubuntu0.5) ...
+Setting up libpython3.8-dev:amd64 (3.8.10-0ubuntu1~20.04.5) ...
+Setting up make (4.2.1-1.2) ...
+Setting up libquadmath0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libatomic1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up python3-pip (20.0.2-5ubuntu1.6) ...
+Setting up python3.8-dev (3.8.10-0ubuntu1~20.04.5) ...
+Setting up libubsan1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libbinutils:amd64 (2.34-6ubuntu1.3) ...
+Setting up libalgorithm-diff-xs-perl (0.04-6) ...
+Setting up liblsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libitm1:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libalgorithm-merge-perl (0.08-3) ...
+Setting up libtsan0:amd64 (10.3.0-1ubuntu1~20.04) ...
+Setting up libctf0:amd64 (2.34-6ubuntu1.3) ...
+Setting up libpython3-dev:amd64 (3.8.2-0ubuntu2) ...
+Setting up libgcc-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Setting up python3-dev (3.8.2-0ubuntu2) ...
+Setting up binutils-x86-64-linux-gnu (2.34-6ubuntu1.3) ...
+Setting up libstdc++-9-dev:amd64 (9.4.0-1ubuntu1~20.04.1) ...
+Setting up binutils (2.34-6ubuntu1.3) ...
+Setting up dpkg-dev (1.19.7ubuntu3.2) ...
+Setting up gcc-9 (9.4.0-1ubuntu1~20.04.1) ...
+Setting up gcc (4:9.3.0-1ubuntu2) ...
+Setting up g++-9 (9.4.0-1ubuntu1~20.04.1) ...
+Setting up g++ (4:9.3.0-1ubuntu2) ...
+update-alternatives: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+Setting up build-essential (12.8ubuntu1.1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip3 install SQLAlchemy
+Requirement already satisfied: SQLAlchemy in ./venv/lib/python3.8/site-packages (1.4.44)
+Requirement already satisfied: greenlet!=0.4.17; python_version >= "3" and (platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32")))))) in ./venv/lib/python3.8/site-packages (from SQLAlchemy) (2.0.1)
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install python3-psycopg2
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libevent-core-2.1-7 libevent-pthreads-2.1-7 libmecab2 libssl-dev mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libpq5
+Suggested packages:
+  python-psycopg2-doc
+The following NEW packages will be installed
+  libpq5 python3-psycopg2
+0 to upgrade, 2 to newly install, 0 to remove and 121 not to upgrade.
+Need to get 229 kB of archives.
+After this operation, 860 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libpq5 amd64 12.12-0ubuntu0.20.04.1 [117 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-psycopg2 amd64 2.8.4-2 [112 kB]
+Fetched 229 kB in 1s (359 kB/s)           
+Selecting previously unselected package libpq5:amd64.
+(Reading database ... 165942 files and directories currently installed.)
+Preparing to unpack .../libpq5_12.12-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking libpq5:amd64 (12.12-0ubuntu0.20.04.1) ...
+Selecting previously unselected package python3-psycopg2.
+Preparing to unpack .../python3-psycopg2_2.8.4-2_amd64.deb ...
+Unpacking python3-psycopg2 (2.8.4-2) ...
+Setting up libpq5:amd64 (12.12-0ubuntu0.20.04.1) ...
+Setting up python3-psycopg2 (2.8.4-2) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install python3-mysqldb
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libevent-core-2.1-7 libevent-pthreads-2.1-7 libmecab2 libssl-dev mecab-ipadic
+  mecab-ipadic-utf8 mecab-utils
+Use 'sudo apt autoremove' to remove them.
+Suggested packages:
+  python3-mysqldb-dbg
+The following NEW packages will be installed
+  python3-mysqldb
+0 to upgrade, 1 to newly install, 0 to remove and 121 not to upgrade.
+Need to get 44.9 kB of archives.
+After this operation, 181 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 python3-mysqldb amd64 1.4.4-2build1 [44.9 kB]
+Fetched 44.9 kB in 0s (125 kB/s)           
+Selecting previously unselected package python3-mysqldb.
+(Reading database ... 165969 files and directories currently installed.)
+Preparing to unpack .../python3-mysqldb_1.4.4-2build1_amd64.deb ...
+Unpacking python3-mysqldb (1.4.4-2build1) ...
+Setting up python3-mysqldb (1.4.4-2build1) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install mysql-server
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  galera-3 libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libreadline5 libsnappy1v5
+  libssl-dev libterm-readkey-perl socat
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  mysql-client-8.0 mysql-client-core-8.0 mysql-server-8.0 mysql-server-core-8.0
+Suggested packages:
+  mailx tinyca
+The following packages will be REMOVED
+  mariadb-client-10.3 mariadb-client-core-10.3 mariadb-server-10.3 mariadb-server-core-10.3
+The following NEW packages will be installed
+  mysql-client-8.0 mysql-client-core-8.0 mysql-server mysql-server-8.0 mysql-server-core-8.0
+0 to upgrade, 5 to newly install, 4 to remove and 121 not to upgrade.
+Need to get 29.0 MB of archives.
+After this operation, 103 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-core-8.0 amd64 8.0.31-0ubuntu0.20.04.1 [5,163 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-client-8.0 amd64 8.0.31-0ubuntu0.20.04.1 [22.0 kB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-core-8.0 amd64 8.0.31-0ubuntu0.20.04.1 [22.5 MB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server-8.0 amd64 8.0.31-0ubuntu0.20.04.1 [1,311 kB]
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 mysql-server all 8.0.31-0ubuntu0.20.04.1 [9,544 B]
+Fetched 29.0 MB in 39s (750 kB/s)                                                              
+Preconfiguring packages ...
+(Reading database ... 165996 files and directories currently installed.)
+Removing mariadb-server-10.3 (1:10.3.34-0ubuntu0.20.04.1) ...
+Removing mariadb-client-10.3 (1:10.3.34-0ubuntu0.20.04.1) ...
+Removing mariadb-client-core-10.3 (1:10.3.34-0ubuntu0.20.04.1) ...
+Removing mariadb-server-core-10.3 (1:10.3.34-0ubuntu0.20.04.1) ...
+Selecting previously unselected package mysql-client-core-8.0.
+(Reading database ... 165732 files and directories currently installed.)
+Preparing to unpack .../mysql-client-core-8.0_8.0.31-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking mysql-client-core-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Selecting previously unselected package mysql-client-8.0.
+Preparing to unpack .../mysql-client-8.0_8.0.31-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking mysql-client-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Selecting previously unselected package mysql-server-core-8.0.
+Preparing to unpack .../mysql-server-core-8.0_8.0.31-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking mysql-server-core-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Selecting previously unselected package mysql-server-8.0.
+Preparing to unpack .../mysql-server-8.0_8.0.31-0ubuntu0.20.04.1_amd64.deb ...
+Downgrade from (at least) 10.3 to 5.7 is not possible.
+MySQL has been frozen to prevent damage to your system. Please see /etc/mysql/FROZEN for help.
+Unpacking mysql-server-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Selecting previously unselected package mysql-server.
+Preparing to unpack .../mysql-server_8.0.31-0ubuntu0.20.04.1_all.deb ...
+Unpacking mysql-server (8.0.31-0ubuntu0.20.04.1) ...
+Setting up mysql-client-core-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Setting up mysql-server-core-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Setting up mysql-client-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Setting up mysql-server-8.0 (8.0.31-0ubuntu0.20.04.1) ...
+Installing new version of config file /etc/apparmor.d/usr.sbin.mysqld ...
+Installing new version of config file /etc/init.d/mysql ...
+Installing new version of config file /etc/logrotate.d/mysql-server ...
+Installing new version of config file /etc/mysql/debian-start ...
+Failed to stop mysql.service: Unit mysql.service not loaded.
+invoke-rc.d: initscript mysql, action "stop" failed.
+MySQL has been frozen to prevent damage to your system. Please see /etc/mysql/FROZEN for help.
+Setting up mysql-server (8.0.31-0ubuntu0.20.04.1) ...
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install postgresql
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  galera-3 libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libreadline5 libsnappy1v5
+  libssl-dev libterm-readkey-perl socat
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libllvm10 postgresql-12 postgresql-client-12 postgresql-client-common postgresql-common
+  sysstat
+Suggested packages:
+  postgresql-doc postgresql-doc-12 libjson-perl isag
+The following NEW packages will be installed
+  libllvm10 postgresql postgresql-12 postgresql-client-12 postgresql-client-common
+  postgresql-common sysstat
+0 to upgrade, 7 to newly install, 0 to remove and 121 not to upgrade.
+Need to get 30.5 MB of archives.
+After this operation, 121 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 libllvm10 amd64 1:10.0.0-4ubuntu1 [15.3 MB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-client-common all 214ubuntu0.1 [28.2 kB]                                                                                    
+Get:3 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-client-12 amd64 12.12-0ubuntu0.20.04.1 [1,051 kB]                                                                           
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-common all 214ubuntu0.1 [169 kB]                                                                                            
+Get:5 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql-12 amd64 12.12-0ubuntu0.20.04.1 [13.5 MB]                                                                                   
+Get:6 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 postgresql all 12+214ubuntu0.1 [3,924 B]                                                                                               
+Get:7 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 sysstat amd64 12.2.0-2ubuntu0.1 [448 kB]                                                                                               
+Fetched 30.5 MB in 40s (766 kB/s)                                                                                                                                                                         
+Preconfiguring packages ...
+Selecting previously unselected package libllvm10:amd64.
+(Reading database ... 165949 files and directories currently installed.)
+Preparing to unpack .../0-libllvm10_1%3a10.0.0-4ubuntu1_amd64.deb ...
+Unpacking libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../1-postgresql-client-common_214ubuntu0.1_all.deb ...
+Unpacking postgresql-client-common (214ubuntu0.1) ...
+Selecting previously unselected package postgresql-client-12.
+Preparing to unpack .../2-postgresql-client-12_12.12-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking postgresql-client-12 (12.12-0ubuntu0.20.04.1) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../3-postgresql-common_214ubuntu0.1_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (214ubuntu0.1) ...
+Selecting previously unselected package postgresql-12.
+Preparing to unpack .../4-postgresql-12_12.12-0ubuntu0.20.04.1_amd64.deb ...
+Unpacking postgresql-12 (12.12-0ubuntu0.20.04.1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../5-postgresql_12+214ubuntu0.1_all.deb ...
+Unpacking postgresql (12+214ubuntu0.1) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../6-sysstat_12.2.0-2ubuntu0.1_amd64.deb ...
+Unpacking sysstat (12.2.0-2ubuntu0.1) ...
+Setting up postgresql-client-common (214ubuntu0.1) ...
+Setting up libllvm10:amd64 (1:10.0.0-4ubuntu1) ...
+Setting up postgresql-client-12 (12.12-0ubuntu0.20.04.1) ...
+update-alternatives: using /usr/share/postgresql/12/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up postgresql-common (214ubuntu0.1) ...
+Adding user postgres to group ssl-cert
+
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Created symlink /etc/systemd/system/multi-user.target.wants/postgresql.service → /lib/systemd/system/postgresql.service.
+Setting up postgresql-12 (12.12-0ubuntu0.20.04.1) ...
+Creating new PostgreSQL cluster 12/main ...
+/usr/lib/postgresql/12/bin/initdb -D /var/lib/postgresql/12/main --auth-local peer --auth-host md5
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/12/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default max_connections ... 100
+selecting default shared_buffers ... 128MB
+selecting default time zone ... America/Los_Angeles
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+Success. You can now start the database server using:
+
+    pg_ctlcluster 12 main start
+
+Ver Cluster Port Status Owner    Data directory              Log file
+12  main    5432 down   postgres /var/lib/postgresql/12/main /var/log/postgresql/postgresql-12-main.log
+update-alternatives: using /usr/share/postgresql/12/man/man1/postmaster.1.gz to provide /usr/share/man/man1/postmaster.1.gz (postmaster.1.gz) in auto mode
+Setting up sysstat (12.2.0-2ubuntu0.1) ...
+
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink /etc/systemd/system/multi-user.target.wants/sysstat.service → /lib/systemd/system/sysstat.service.
+Setting up postgresql (12+214ubuntu0.1) ...
+Processing triggers for systemd (245.4-4ubuntu3.15) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install sqlite3
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  galera-3 libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libreadline5 libsnappy1v5
+  libssl-dev libterm-readkey-perl socat
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  libsqlite3-0
+Suggested packages:
+  sqlite3-doc
+The following NEW packages will be installed
+  sqlite3
+The following packages will be upgraded:
+  libsqlite3-0
+1 to upgrade, 1 to newly install, 0 to remove and 120 not to upgrade.
+Need to get 1,409 kB of archives.
+After this operation, 2,803 kB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 libsqlite3-0 amd64 3.31.1-4ubuntu0.5 [549 kB]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/main amd64 sqlite3 amd64 3.31.1-4ubuntu0.5 [860 kB]
+Fetched 1,409 kB in 2s (616 kB/s)
+(Reading database ... 167770 files and directories currently installed.)
+Preparing to unpack .../libsqlite3-0_3.31.1-4ubuntu0.5_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.31.1-4ubuntu0.5) over (3.31.1-4ubuntu0.4) ...
+Selecting previously unselected package sqlite3.
+Preparing to unpack .../sqlite3_3.31.1-4ubuntu0.5_amd64.deb ...
+Unpacking sqlite3 (3.31.1-4ubuntu0.5) ...
+Setting up libsqlite3-0:amd64 (3.31.1-4ubuntu0.5) ...
+Setting up sqlite3 (3.31.1-4ubuntu0.5) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.7) ...
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install python3-dev
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python3-dev is already the newest version (3.8.2-0ubuntu2).
+python3-dev set to manually installed.
+The following packages were automatically installed and are no longer required:
+  galera-3 libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libreadline5 libsnappy1v5
+  libssl-dev libterm-readkey-perl socat
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 120 not to upgrade.
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install -y python3-setuptools
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python3-setuptools is already the newest version (45.2.0-1).
+python3-setuptools set to manually installed.
+The following packages were automatically installed and are no longer required:
+  galera-3 libconfig-inifiles-perl libdbd-mysql-perl libdbi-perl libreadline5 libsnappy1v5
+  libssl-dev libterm-readkey-perl socat
+Use 'sudo apt autoremove' to remove them.
+0 to upgrade, 0 to newly install, 0 to remove and 120 not to upgrade.
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip-install -r requirements.txt
+pip-install: command not found
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip3 install -r requirements.txt
+Collecting mysqlclient
+  Using cached mysqlclient-2.1.1.tar.gz (88 kB)
+Collecting ipython
+  Using cached ipython-8.6.0-py3-none-any.whl (761 kB)
+Requirement already satisfied: sqlalchemy in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (1.4.44)
+Collecting pdoc3
+  Using cached pdoc3-0.10.0-py3-none-any.whl (135 kB)
+Collecting mariadb==1.0.11
+  Using cached mariadb-1.0.11.zip (85 kB)
+Collecting pexpect>4.3; sys_platform != "win32"
+  Using cached pexpect-4.8.0-py2.py3-none-any.whl (59 kB)
+Collecting backcall
+  Using cached backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting pygments>=2.4.0
+  Using cached Pygments-2.13.0-py3-none-any.whl (1.1 MB)
+Collecting jedi>=0.16
+  Using cached jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+Collecting matplotlib-inline
+  Using cached matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting decorator
+  Using cached decorator-5.1.1-py3-none-any.whl (9.1 kB)
+Collecting stack-data
+  Using cached stack_data-0.6.1-py3-none-any.whl (24 kB)
+Collecting pickleshare
+  Using cached pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting traitlets>=5
+  Using cached traitlets-5.5.0-py3-none-any.whl (107 kB)
+Collecting prompt-toolkit<3.1.0,>3.0.1
+  Using cached prompt_toolkit-3.0.33-py3-none-any.whl (383 kB)
+Requirement already satisfied: greenlet!=0.4.17; python_version >= "3" and (platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32")))))) in ./venv/lib/python3.8/site-packages (from sqlalchemy->-r requirements.txt (line 3)) (2.0.1)
+Collecting markdown>=3.0
+  Using cached Markdown-3.4.1-py3-none-any.whl (93 kB)
+Collecting mako
+  Using cached Mako-1.2.4-py3-none-any.whl (78 kB)
+Collecting ptyprocess>=0.5
+  Using cached ptyprocess-0.7.0-py2.py3-none-any.whl (13 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Using cached parso-0.8.3-py2.py3-none-any.whl (100 kB)
+Collecting asttokens>=2.1.0
+  Using cached asttokens-2.1.0-py2.py3-none-any.whl (26 kB)
+Collecting executing>=1.2.0
+  Using cached executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Collecting pure-eval
+  Using cached pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting wcwidth
+  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting importlib-metadata>=4.4; python_version < "3.10"
+  Using cached importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+Collecting MarkupSafe>=0.9.2
+  Using cached MarkupSafe-2.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+Collecting six
+  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Collecting zipp>=0.5
+  Using cached zipp-3.10.0-py3-none-any.whl (6.2 kB)
+Building wheels for collected packages: mysqlclient, mariadb
+  Building wheel for mysqlclient (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-q47is_q7/mysqlclient/setup.py'"'"'; __file__='"'"'/tmp/pip-install-q47is_q7/mysqlclient/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-mobug442
+       cwd: /tmp/pip-install-q47is_q7/mysqlclient/
+  Complete output (22 lines):
+  mysql_config --version
+  /bin/sh: 1: mysql_config: not found
+  mariadb_config --version
+  ['10.3.34']
+  mariadb_config --libs
+  ['-L/usr/lib/x86_64-linux-gnu/', '-lmariadb']
+  mariadb_config --cflags
+  ['-I/usr/include/mariadb', '-I/usr/include/mariadb/mysql']
+  ext_options:
+    library_dirs: ['/usr/lib/x86_64-linux-gnu/']
+    libraries: ['mariadb']
+    extra_compile_args: ['-std=c99']
+    extra_link_args: []
+    include_dirs: ['/usr/include/mariadb', '/usr/include/mariadb/mysql']
+    extra_objects: []
+    define_macros: [('version_info', "(2,1,1,'final',0)"), ('__version__', '2.1.1')]
+  usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: setup.py --help [cmd1 cmd2 ...]
+     or: setup.py --help-commands
+     or: setup.py cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  ----------------------------------------
+  ERROR: Failed building wheel for mysqlclient
+  Running setup.py clean for mysqlclient
+  Building wheel for mariadb (setup.py) ... error
+  ERROR: Command errored out with exit status 1:
+   command: /home/resume/week4/WAD_note_demo/venv/bin/python3 -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-q47is_q7/mariadb/setup.py'"'"'; __file__='"'"'/tmp/pip-install-q47is_q7/mariadb/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-hwyy7kwh
+       cwd: /tmp/pip-install-q47is_q7/mariadb/
+  Complete output (6 lines):
+  usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+     or: setup.py --help [cmd1 cmd2 ...]
+     or: setup.py --help-commands
+     or: setup.py cmd --help
+  
+  error: invalid command 'bdist_wheel'
+  ----------------------------------------
+  ERROR: Failed building wheel for mariadb
+  Running setup.py clean for mariadb
+Failed to build mysqlclient mariadb
+Installing collected packages: mysqlclient, ptyprocess, pexpect, backcall, pygments, parso, jedi, traitlets, matplotlib-inline, decorator, six, asttokens, executing, pure-eval, stack-data, pickleshare, wcwidth, prompt-toolkit, ipython, zipp, importlib-metadata, markdown, MarkupSafe, mako, pdoc3, mariadb
+    Running setup.py install for mysqlclient ... done
+    Running setup.py install for mariadb ... done
+Successfully installed MarkupSafe-2.1.1 asttokens-2.1.0 backcall-0.2.0 decorator-5.1.1 executing-1.2.0 importlib-metadata-5.0.0 ipython-8.6.0 jedi-0.18.2 mako-1.2.4 mariadb-1.0.11 markdown-3.4.1 matplotlib-inline-0.1.6 mysqlclient-2.1.1 parso-0.8.3 pdoc3-0.10.0 pexpect-4.8.0 pickleshare-0.7.5 prompt-toolkit-3.0.33 ptyprocess-0.7.0 pure-eval-0.2.2 pygments-2.13.0 six-1.16.0 stack-data-0.6.1 traitlets-5.5.0 wcwidth-0.2.5 zipp-3.10.0
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+python3-dev is already the newest version (3.8.2-0ubuntu2).
+build-essential is already the newest version (12.8ubuntu1.1).
+build-essential set to manually installed.
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies.
+ default-libmysqlclient-dev : Depends: libmysqlclient-dev but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ pip install -r requirements.txt
+Requirement already satisfied: mysqlclient in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (2.1.1)
+Requirement already satisfied: ipython in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (8.6.0)
+Requirement already satisfied: sqlalchemy in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (1.4.44)
+Requirement already satisfied: pdoc3 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 4)) (0.10.0)
+Requirement already satisfied: mariadb==1.0.11 in ./venv/lib/python3.8/site-packages (from -r requirements.txt (line 5)) (1.0.11)
+Requirement already satisfied: jedi>=0.16 in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (0.18.2)
+Requirement already satisfied: matplotlib-inline in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (0.1.6)
+Requirement already satisfied: decorator in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (5.1.1)
+Requirement already satisfied: pygments>=2.4.0 in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (2.13.0)
+Requirement already satisfied: prompt-toolkit<3.1.0,>3.0.1 in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (3.0.33)
+Requirement already satisfied: pexpect>4.3; sys_platform != "win32" in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (4.8.0)
+Requirement already satisfied: backcall in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (0.2.0)
+Requirement already satisfied: stack-data in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (0.6.1)
+Requirement already satisfied: traitlets>=5 in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (5.5.0)
+Requirement already satisfied: pickleshare in ./venv/lib/python3.8/site-packages (from ipython->-r requirements.txt (line 2)) (0.7.5)
+Requirement already satisfied: greenlet!=0.4.17; python_version >= "3" and (platform_machine == "aarch64" or (platform_machine == "ppc64le" or (platform_machine == "x86_64" or (platform_machine == "amd64" or (platform_machine == "AMD64" or (platform_machine == "win32" or platform_machine == "WIN32")))))) in ./venv/lib/python3.8/site-packages (from sqlalchemy->-r requirements.txt (line 3)) (2.0.1)
+Requirement already satisfied: mako in ./venv/lib/python3.8/site-packages (from pdoc3->-r requirements.txt (line 4)) (1.2.4)
+Requirement already satisfied: markdown>=3.0 in ./venv/lib/python3.8/site-packages (from pdoc3->-r requirements.txt (line 4)) (3.4.1)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in ./venv/lib/python3.8/site-packages (from jedi>=0.16->ipython->-r requirements.txt (line 2)) (0.8.3)
+Requirement already satisfied: wcwidth in ./venv/lib/python3.8/site-packages (from prompt-toolkit<3.1.0,>3.0.1->ipython->-r requirements.txt (line 2)) (0.2.5)
+Requirement already satisfied: ptyprocess>=0.5 in ./venv/lib/python3.8/site-packages (from pexpect>4.3; sys_platform != "win32"->ipython->-r requirements.txt (line 2)) (0.7.0)
+Requirement already satisfied: asttokens>=2.1.0 in ./venv/lib/python3.8/site-packages (from stack-data->ipython->-r requirements.txt (line 2)) (2.1.0)
+Requirement already satisfied: executing>=1.2.0 in ./venv/lib/python3.8/site-packages (from stack-data->ipython->-r requirements.txt (line 2)) (1.2.0)
+Requirement already satisfied: pure-eval in ./venv/lib/python3.8/site-packages (from stack-data->ipython->-r requirements.txt (line 2)) (0.2.2)
+Requirement already satisfied: MarkupSafe>=0.9.2 in ./venv/lib/python3.8/site-packages (from mako->pdoc3->-r requirements.txt (line 4)) (2.1.1)
+Requirement already satisfied: importlib-metadata>=4.4; python_version < "3.10" in ./venv/lib/python3.8/site-packages (from markdown>=3.0->pdoc3->-r requirements.txt (line 4)) (5.0.0)
+Requirement already satisfied: six in ./venv/lib/python3.8/site-packages (from asttokens>=2.1.0->stack-data->ipython->-r requirements.txt (line 2)) (1.16.0)
+Requirement already satisfied: zipp>=0.5 in ./venv/lib/python3.8/site-packages (from importlib-metadata>=4.4; python_version < "3.10"->markdown>=3.0->pdoc3->-r requirements.txt (line 4)) (3.10.0)
+(venv) resume@ubuntu:~/week4/WAD_note_demo$ 
